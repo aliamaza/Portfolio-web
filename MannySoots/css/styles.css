@@ -151,6 +151,10 @@ p:last-of-type {
     font-size: .7rem;
     font-weight: 700;
 }
+.button-social{
+    display: inline-block;
+    padding: .5em;
+}
 
 .button-accent {
     color: #00ff6c;
@@ -166,6 +170,11 @@ p:last-of-type {
 .button-dark {
     color: #232323;
     border-color: #232323
+}
+
+.button-social:hover,
+.button-social:focus {
+    transform: scale(1.3);
 }
 
 .button-dark:hover,
