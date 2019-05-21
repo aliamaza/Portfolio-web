@@ -25,6 +25,62 @@ img{
     margin: 0 auto;
 }
 
+.clearfix::after,
+section::after,
+footer::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* column system
+=================*/
+
+
+[class^=col-]{
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child {
+    margin-top: 0;
+}
+
+[class^=col-]
+{
+    float: left;
+    padding: 0 .5em;
+}
+
+
+
+
+@media (min-width: 40rem){
+
+    [class^=col-]{
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+    
+    [class^=col-]:first-child {
+        padding-right: 0;
+    }
+
+    [class^=col-]:last-child {
+        padding-left: 0;
+    }
+
+    .col-3{
+        width: 50%;
+    }
+
+    .col-1{
+        width: 16.6666%;
+    }
+}
+
+
 /* typography
 =================*/
 h1 {
@@ -57,13 +113,24 @@ p:last-of-type{
     font-size: .9em;
 }
 
+.title-cta{
+    margin: 0 0 .5em;
+}
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 @media (min-width: 60rem) {
     .title{
         font-size: 3.7rem;
     }
 }
 
-/* header
+
+/* buttons
 =================*/
 
 .button {
@@ -94,6 +161,15 @@ p:last-of-type{
 .button-accent:focus {
     background: #00ff6c;
     color: #232323;
+}
+.button-dark{
+    color: #232323;
+    border-color: #232323
+}
+.button-dark:hover,
+.button-dark:focus {
+    background: #232323;
+    color: #00ff6c;
 }
 
 
@@ -153,7 +229,7 @@ nav a:focus {
 }
 @media (min-width: 60rem) {
     .home-hero{
-        height: 100vh;
+        height: 100vw;
         padding-top: 35vh;
     }
 }
@@ -182,6 +258,7 @@ nav a:focus {
     top: .75em;
     background: #232323;
     padding: 0 .1em;
+    overflow: auto;
 
 }
 
@@ -236,7 +313,7 @@ nav a:focus {
 =================*/
 
 .portfolio {
-    margin: 3em 0;
+    margin: 3em 0 0;
     color: #FFF;
 }
 
@@ -282,5 +359,23 @@ nav a:focus {
     .port-item:hover .port-desc{
         transform: translateY(0%)
     }
+}
+
+/* cta
+=================*/
+
+.cta{
+    
+    background-color: #00ff6c;
+    padding: 5em 0;
+}
+
+/* footer
+=================*/
+
+footer{
+    color: #FFF;
+    text-align: left;
+    padding: 5em 0;
 }
 
