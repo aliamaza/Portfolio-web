@@ -230,6 +230,14 @@ nav a:focus {
     }
 }
 
+.about-hero {
+    background-image: url(../img/about-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #FFF;
+}
+
 /* home-hero
 =================*/
 .home-hero {
@@ -245,12 +253,28 @@ nav a:focus {
         height: 100vh;
         padding-top: 35vh;
     }
+    .about-hero{
+        height: 100vh;
+        padding-top: 35vh;
+    }
 }
 
 /* home-hero
 =================*/
 
 .home-about-textbox {
+    background-color: #232323;
+    padding: 4em;
+    width: 105%;
+    margin-left: -2.5%;
+    outline: 2px solid #00ff6c;
+    outline-offset: -2.5em;
+    color: #FFF;
+    position: relative;
+
+
+}
+.about-about-textbox {
     background-color: #232323;
     padding: 4em;
     width: 105%;
@@ -273,6 +297,16 @@ nav a:focus {
     padding: 0 .1em;
 
 }
+.about-about-textbox h1 {
+    color: #00ff6c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .75em;
+    background: #232323;
+    padding: 0 .1em;
+
+}
 
 @media (min-width: 25rem) {
     h1 {
@@ -280,6 +314,10 @@ nav a:focus {
     }
 
     .home-about-textbox h1 {
+        top: .6em;
+        padding: 0 .325em;
+    }
+    .about-about-textbox h1 {
         top: .6em;
         padding: 0 .325em;
     }
@@ -296,6 +334,12 @@ nav a:focus {
     }
 
     .home-about {
+        background-image: url(../img/about-image-home.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 10em;
+    }
+    .about-about {
         background-image: url(../img/about-image.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -312,8 +356,23 @@ nav a:focus {
         text-align: left;
         box-shadow: 0 0 4em rgba(0, 0, 0, 0.4)
     }
+    .about-about-textbox {
+
+        width: 50%;
+        padding: 7em;
+        outline-offset: -3.75em;
+        margin-left: -2.5%;
+        top: -5em;
+        text-align: left;
+        box-shadow: 0 0 4em rgba(0, 0, 0, 0.4)
+    }
 
     .home-about-textbox h1 {
+        top: .75em;
+        left: 6rem;
+        transform: translateX(0)
+    }
+    .about-about-textbox h1 {
         top: .75em;
         left: 6rem;
         transform: translateX(0)
