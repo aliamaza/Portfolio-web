@@ -340,10 +340,12 @@ nav a:focus {
         padding-bottom: 10em;
     }
     .about-about {
-        background-image: url(../img/about-image.jpg);
+        background-image: url(../img/about-image-about.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
-        padding-bottom: 10em;
+        padding-bottom: 5em;
+    
+    
     }
 
     .home-about-textbox {
@@ -358,10 +360,10 @@ nav a:focus {
     }
     .about-about-textbox {
 
-        width: 50%;
+        width: 60%;
         padding: 7em;
         outline-offset: -3.75em;
-        margin-left: -2.5%;
+        margin-left: 42.5%;
         top: -5em;
         text-align: left;
         box-shadow: 0 0 4em rgba(0, 0, 0, 0.4)
